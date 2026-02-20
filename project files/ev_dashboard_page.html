@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualization Tool for EV Charge and Range Analysis</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    nav { background: #f0f0f0; padding: 10px; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; font-weight: bold; color: #0077cc; }
+    nav a:hover { text-decoration: underline; }
+    .content { display: none; padding: 20px; }
+    .active { display: block; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#story">Story</a>
+  </nav>
+
+  <div id="home" class="content active">
+    <h1>Visualization Tool For Electric Vehicle Charge And Range Analysis</h1>
+
+    <h3>Category:</h3>
+    <p><strong>Data Analytics With Tableau</strong></p>
+
+    <h3>Skills Required:</h3>
+    <p>Exploratory Data Analysis, MySQL, Databases, Tableau</p>
+
+    <h3>Project Description:</h3>
+    <p>This project focuses on creating an interactive visualization tool to analyze electric vehicle charging behavior and range patterns using Tableau. Data is collected, processed through databases, explored via analytical tools, and finally visualized to provide valuable insights to end users.</p>
+  </div>
+
+  <div id="about" class="content">
+    <h2>About</h2>
+    <p>This project is a data-driven initiative focused on understanding electric vehicle (EV) usage patterns—specifically charging behavior and range analysis. Using Tableau, a powerful data visualization tool, we transform complex datasets into interactive and meaningful insights.</p>
+
+    <p>The platform is designed for researchers, EV manufacturers, policy makers, and data analysts who aim to monitor trends, evaluate infrastructure needs, and promote efficient energy use in the EV ecosystem.</p>
+
+    <p>From raw MySQL databases to polished dashboards, the project walks through every stage of data analysis—exploration, cleaning, transformation, and presentation—making it a complete case study in applied data analytics.</p>
+  </div>
+
+  <div id="dashboard" class="content">
+    <h2>Dashboard</h2>
+    <div class='tableauPlaceholder' id='viz1751534548270' style='position: relative'>
+      <noscript><a href='#'><img alt='Dashboard 1' src='https://public.tableau.com/static/images/da/dashboard_17515320445720/Dashboard1/1_rss.png' style='border: none' /></a></noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='dashboard_17515320445720/Dashboard1' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/da/dashboard_17515320445720/Dashboard1/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1751534548270');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '1400px';
+        vizElement.style.height = '827px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '1400px';
+        vizElement.style.height = '827px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '1777px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+
+  <div id="story" class="content">
+    <h2>Story</h2>
+    <div class='tableauPlaceholder' id='viz1751535429079' style='position: relative'>
+      <noscript><a href='#'><img alt='Story 1' src='https://public.tableau.com/static/images/TW/TW9CQW8FP/1_rss.png' style='border: none' /></a></noscript>
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='path' value='shared/TW9CQW8FP' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/TW/TW9CQW8FP/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1751535429079');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '1816px';
+      vizElement.style.height = '991px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
+
+  <script>
+    const links = document.querySelectorAll('nav a');
+    const sections = document.querySelectorAll('.content');
+
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        sections.forEach(sec => sec.classList.remove('active'));
+        document.querySelector(link.getAttribute('href')).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
