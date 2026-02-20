@@ -42,7 +42,7 @@ ev-charge-range-visualization/
 
 Clone the repository and navigate into the project folder:
 # Clone repository
-git clone :https://github.com/sowmya-chelluboina/Visualization-Tool-for-Electric-Vehicle-Charge-and-Range-Analysis.git
+git clone https://github.com/sowmya-chelluboina/Visualization-Tool-for-Electric-Vehicle-Charge-and-Range-Analysis.git
 cd ev-charge-range-visualization
 
 # Create virtual environment (optional but recommended)
